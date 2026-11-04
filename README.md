@@ -101,7 +101,7 @@ New in the window, written for NEAR: the wallet MCP server and its four tools (`
 ## Honest status
 
 - Works, and was run: unit tests of the policy, approvals, verifier, concurrency and integrity (17 tests, plus 4 contract sandbox tests); the full demo on a mock chain; the full demo on NEAR testnet including real transfers, an onchain anchor, read-back and offline verification; the three tamper cases.
-- The contract sandbox tests (`test/contract.test.ts`, near-workspaces) are skipped on the author's Intel Mac (near-sandbox has no binary for it), so they were not run locally. They run in GitHub Actions on Linux, where all four pass (see the latest CI run id below). The contract was also exercised on testnet.
+- The contract sandbox tests (`test/contract.test.ts`, near-workspaces) are skipped on the author's Intel Mac (near-sandbox has no binary for it), so they were not run locally. They run in GitHub Actions on Linux, where all four pass (CI run 41810020187). The contract was also exercised on testnet.
 - Contract language: TypeScript with near-sdk-js 2.0.0, as intended. It builds and runs, but it was last released in June 2024 and NEAR's own docs call near-sdk-rs the only official SDK. A Rust port would be the production choice.
 - The anchor contract trusts the signing account for its own logs (anyone can anchor under their own account). A verifier must check which publisher the anchor record names.
 - An anchor proves a ledger head existed at that block. It cannot prove entries a compromised host never wrote, or events before the first anchor.
@@ -112,7 +112,7 @@ New in the window, written for NEAR: the wallet MCP server and its four tools (`
 - Approval loss found and fixed: `pnpm approve` runs in a second process and appends an approval entry; the running server used to rewrite the whole file from memory and drop it. The Gate now reloads and re-verifies the file under a lock before each decision and append.
 - Malformed amounts are recorded as a DENY entry (`invalid_amount`).
 - At startup the Gate compares the ledger with `<ledger>.anchor.json` when that file exists and refuses to run on a mismatch (a tail-truncated file would otherwise reset the daily spend). With no anchor file present, a truncated ledger is undetectable; anchor early.
-- Latest green CI run: CI_RUN_PLACEHOLDER.
+- Latest green CI run: run 41810020187 (all 21 tests passed on Linux, including the 4 contract sandbox tests; it is the run for the code commit's docs push 1c7409e).
 - Testnet only. Mainnet is refused in code and was never touched.
 - Full list of what was and was not checked against NEAR's docs: [docs/verified-facts.md](docs/verified-facts.md).
 
