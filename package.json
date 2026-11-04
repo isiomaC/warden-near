@@ -15,7 +15,7 @@
     "near-sdk-js": "2.0.0",
     "near-workspaces": "^5.0.0",
     "tsx": "^4.23.15",
-    "typescript": "^7.0.2",
+    "typescript": "^5.9.3",
     "vitest": "^5.1.0"
   },
   "dependencies": {
