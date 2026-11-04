@@ -41,7 +41,8 @@ await call("pay 5 NEAR (over per-call cap of 1)", "near_transfer", { receiver_id
 const pending = await call("pay 0.8 NEAR (needs human approval)", "near_transfer", { receiver_id: payee, amount_near: "0.8" });
 const id = /PENDING_APPROVAL (\S+):/.exec(pending)![1]!;
 console.log(`        -- human runs: pnpm approve ${id}`);
-gate.resolve(id, "APPROVED", "human");
+// a second Gate on the same ledger file, exactly what `pnpm approve` does in another process
+new Gate(policy, ledger, "human").resolve(id, "APPROVED", "human");
 await call("retry 0.8 NEAR with approval_id", "near_transfer", { receiver_id: payee, amount_near: "0.8", approval_id: id });
 await call("pay 0.5 NEAR", "near_transfer", { receiver_id: payee, amount_near: "0.5" });
 await call("pay 0.5 NEAR", "near_transfer", { receiver_id: payee, amount_near: "0.5" });
