@@ -1,0 +1,17 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.seed
+*.mnemonic
+.near-credentials/
+credentials/
+secrets/
+.warden/
+dist/
+build/
+coverage/
+*.log
+.DS_Store

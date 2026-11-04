@@ -1,0 +1,48 @@
+{
+  "name": "warden-near",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Policy-gated wallet for AI agents on NEAR: deny-wins spend limits, hash-chained decision ledger anchored onchain.",
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@10.29.3",
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "near-cli-rs": "^0.30.1",
+    "near-sdk-js": "2.0.0",
+    "near-workspaces": "^5.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "@stlw/warden": "0.2.9",
+    "near-api-js": "^7.4.0",
+    "zod": "^4.6.7"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "near-sdk-js",
+      "near-sandbox",
+      "near-workspaces",
+      "esbuild"
+    ]
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build:contract": "sh scripts/build-contract.sh",
+    "test": "vitest run",
+    "demo": "tsx --env-file-if-exists=.env src/demo.ts",
+    "anchor": "tsx --env-file-if-exists=.env src/cli.ts anchor",
+    "verify": "tsx src/cli.ts verify",
+    "demo:tamper": "tsx src/tamper-demo.ts",
+    "mcp": "tsx --env-file-if-exists=.env src/mcp-server.ts",
+    "setup:testnet": "tsx scripts/setup-testnet.ts",
+    "deploy:contract": "tsx --env-file=.env scripts/deploy.ts",
+    "approve": "tsx src/cli.ts approve"
+  }
+}
