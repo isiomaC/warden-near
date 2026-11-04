@@ -1,0 +1,11 @@
+{
+  "network": "near-testnet",
+  "contract": "warden-anchor-lkazab.testnet",
+  "publisher": "warden-agent-lkazab.testnet",
+  "logName": "demo-20261104083847",
+  "logId": "4c3c3e3f111092fbb7f11eb9c4ece6535d6b1200f5cf7e6018d8a9e1a052a7d2",
+  "entryCount": 18,
+  "headHash": "726a9a76ecc5ea56899250d4f5292b967d26bf9aaec2c141c3058e991cca0a80",
+  "txHash": "4uEgtC8UyXnVQf8jh5wXre3gq257yPwi82nDhtSFTNwx",
+  "blockHeight": 276171110
+}

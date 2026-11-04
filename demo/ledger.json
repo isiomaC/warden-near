@@ -1,0 +1,430 @@
+{
+  "entries": [
+    {
+      "ledgerFormatVersion": 1,
+      "canonicalizationVersion": 1,
+      "hashAlgorithm": "sha256",
+      "previousHash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "event": {
+        "eventId": "evt_01M6JVBKEN1KQW8WCNMM57EFTY",
+        "eventType": "near.decision",
+        "occurredAt": "2026-11-04T08:38:37.782Z",
+        "actor": "demo-agent",
+        "payload": {
+          "tool": "near_get_balance",
+          "params": {},
+          "amountYocto": "0",
+          "effect": "ALLOW",
+          "matchedRules": [
+            "allow-reads"
+          ],
+          "reason": "allow-reads"
+        }
+      },
+      "hash": "e48c1e3685f673e7318634fc96c77ba6b134d8b3eb26feda1b4e7a954c8e8366"
+    },
+    {
+      "ledgerFormatVersion": 1,
+      "canonicalizationVersion": 1,
+      "hashAlgorithm": "sha256",
+      "previousHash": "e48c1e3685f673e7318634fc96c77ba6b134d8b3eb26feda1b4e7a954c8e8366",
+      "event": {
+        "eventId": "evt_01M6JVBKTS61790RPBPFFM1EZ3",
+        "eventType": "near.execution",
+        "occurredAt": "2026-11-04T08:38:38.169Z",
+        "actor": "demo-agent",
+        "payload": {
+          "tool": "near_get_balance",
+          "account": "warden-agent-lkazab.testnet",
+          "balance_near": "10"
+        }
+      },
+      "hash": "09200a6799ea764545a00d76233c707b8c6f801fc3fd733fef4dd04446d11767"
+    },
+    {
+      "ledgerFormatVersion": 1,
+      "canonicalizationVersion": 1,
+      "hashAlgorithm": "sha256",
+      "previousHash": "09200a6799ea764545a00d76233c707b8c6f801fc3fd733fef4dd04446d11767",
+      "event": {
+        "eventId": "evt_01M6JVBKTX89X7DH3M6GF2TDDG",
+        "eventType": "near.decision",
+        "occurredAt": "2026-11-04T08:38:38.174Z",
+        "actor": "demo-agent",
+        "payload": {
+          "tool": "near_view",
+          "params": {
+            "contract_id": "warden-anchor-lkazab.testnet",
+            "method": "latest",
+            "args": {
+              "publisher": "warden-agent-lkazab.testnet",
+              "logId": "0000000000000000000000000000000000000000000000000000000000000000"
+            }
+          },
+          "amountYocto": "0",
+          "effect": "ALLOW",
+          "matchedRules": [
+            "allow-reads"
+          ],
+          "reason": "allow-reads"
+        }
+      },
+      "hash": "4d35570ca74035ebdf1ce88dc1ba414e206769983676910f921f9bbbb418e97c"
+    },
+    {
+      "ledgerFormatVersion": 1,
+      "canonicalizationVersion": 1,
+      "hashAlgorithm": "sha256",
+      "previousHash": "4d35570ca74035ebdf1ce88dc1ba414e206769983676910f921f9bbbb418e97c",
+      "event": {
+        "eventId": "evt_01M6JVBKYH8PHZ97XZ2ZQPVWRA",
+        "eventType": "near.execution",
+        "occurredAt": "2026-11-04T08:38:38.289Z",
+        "actor": "demo-agent",
+        "payload": {
+          "tool": "near_view",
+          "result": null
+        }
+      },
+      "hash": "0bd92c578ca0f6468e7456b378a001ea643e7d83372bb1e01453216015c1ba7e"
+    },
+    {
+      "ledgerFormatVersion": 1,
+      "canonicalizationVersion": 1,
+      "hashAlgorithm": "sha256",
+      "previousHash": "0bd92c578ca0f6468e7456b378a001ea643e7d83372bb1e01453216015c1ba7e",
+      "event": {
+        "eventId": "evt_01M6JVBKYNCZZBANP3ZDAP6PX7",
+        "eventType": "near.decision",
+        "occurredAt": "2026-11-04T08:38:38.293Z",
+        "actor": "demo-agent",
+        "payload": {
+          "tool": "near_transfer",
+          "params": {
+            "receiver_id": "warden-anchor-lkazab.testnet",
+            "amount_near": "0.1"
+          },
+          "amountYocto": "100000000000000000000000",
+          "effect": "ALLOW",
+          "matchedRules": [
+            "allow-transfer-to-allowlisted"
+          ],
+          "reason": "allow-transfer-to-allowlisted"
+        }
+      },
+      "hash": "cfb8b09d24ef6435e1a9ab8e106616c20cf63b6aafada63c31bb2fe20b44391f"
+    },
+    {
+      "ledgerFormatVersion": 1,
+      "canonicalizationVersion": 1,
+      "hashAlgorithm": "sha256",
+      "previousHash": "cfb8b09d24ef6435e1a9ab8e106616c20cf63b6aafada63c31bb2fe20b44391f",
+      "event": {
+        "eventId": "evt_01M6JVBPCBCMFB38SH5H0BCBTV",
+        "eventType": "near.execution",
+        "occurredAt": "2026-11-04T08:38:40.779Z",
+        "actor": "demo-agent",
+        "payload": {
+          "tool": "near_transfer",
+          "txHash": "FCm4UMcdAcU4gM7d5pWSHcqXDwN2X5XvSNXdN4Yum3dR",
+          "receiver": "warden-anchor-lkazab.testnet",
+          "amount_near": "0.1"
+        }
+      },
+      "hash": "fb24c4e9a4e3751af619f092d7e2fd59a65d79949534abb6346be2e666b1a1d9"
+    },
+    {
+      "ledgerFormatVersion": 1,
+      "canonicalizationVersion": 1,
+      "hashAlgorithm": "sha256",
+      "previousHash": "fb24c4e9a4e3751af619f092d7e2fd59a65d79949534abb6346be2e666b1a1d9",
+      "event": {
+        "eventId": "evt_01M6JVBPCGDT89Y6260T1YA4GM",
+        "eventType": "near.decision",
+        "occurredAt": "2026-11-04T08:38:40.784Z",
+        "actor": "demo-agent",
+        "payload": {
+          "tool": "near_transfer",
+          "params": {
+            "receiver_id": "attacker.testnet",
+            "amount_near": "0.3"
+          },
+          "amountYocto": "300000000000000000000000",
+          "effect": "DENY",
+          "matchedRules": [
+            "deny-recipient-not-allowlisted"
+          ],
+          "reason": "deny-recipient-not-allowlisted"
+        }
+      },
+      "hash": "d40a32780dae2209cf3d8cbdb3e565177c495314656db66c07248ce012c3dbeb"
+    },
+    {
+      "ledgerFormatVersion": 1,
+      "canonicalizationVersion": 1,
+      "hashAlgorithm": "sha256",
+      "previousHash": "d40a32780dae2209cf3d8cbdb3e565177c495314656db66c07248ce012c3dbeb",
+      "event": {
+        "eventId": "evt_01M6JVBPCKMCQYNBFJY4JF0PPT",
+        "eventType": "near.decision",
+        "occurredAt": "2026-11-04T08:38:40.787Z",
+        "actor": "demo-agent",
+        "payload": {
+          "tool": "near_call_contract",
+          "params": {
+            "contract_id": "evil.testnet",
+            "method": "drain",
+            "args": {}
+          },
+          "amountYocto": "0",
+          "effect": "DENY",
+          "matchedRules": [
+            "deny-contract-not-allowlisted"
+          ],
+          "reason": "deny-contract-not-allowlisted"
+        }
+      },
+      "hash": "762db150c0a0e137ab859c2cae5a0beedece9c435e1a6ea99c3077c10579cd68"
+    },
+    {
+      "ledgerFormatVersion": 1,
+      "canonicalizationVersion": 1,
+      "hashAlgorithm": "sha256",
+      "previousHash": "762db150c0a0e137ab859c2cae5a0beedece9c435e1a6ea99c3077c10579cd68",
+      "event": {
+        "eventId": "evt_01M6JVBPCNM10P70E77SJDGSCV",
+        "eventType": "near.decision",
+        "occurredAt": "2026-11-04T08:38:40.790Z",
+        "actor": "demo-agent",
+        "payload": {
+          "tool": "near_transfer",
+          "params": {
+            "receiver_id": "warden-anchor-lkazab.testnet",
+            "amount_near": "5"
+          },
+          "amountYocto": "5000000000000000000000000",
+          "effect": "DENY",
+          "matchedRules": [
+            "deny-over-per-call-cap",
+            "deny-over-daily-cap",
+            "approve-large-spend"
+          ],
+          "reason": "deny-over-per-call-cap, deny-over-daily-cap, approve-large-spend"
+        }
+      },
+      "hash": "1d5d91a479aa78276b6c905bf7809ba5765ec12b09321efce8397094f8f1f08b"
+    },
+    {
+      "ledgerFormatVersion": 1,
+      "canonicalizationVersion": 1,
+      "hashAlgorithm": "sha256",
+      "previousHash": "1d5d91a479aa78276b6c905bf7809ba5765ec12b09321efce8397094f8f1f08b",
+      "event": {
+        "eventId": "evt_01M6JVBPCSPSWMC44MXMXKKY95",
+        "eventType": "near.decision",
+        "occurredAt": "2026-11-04T08:38:40.793Z",
+        "actor": "demo-agent",
+        "payload": {
+          "tool": "near_transfer",
+          "params": {
+            "receiver_id": "warden-anchor-lkazab.testnet",
+            "amount_near": "0.8"
+          },
+          "amountYocto": "800000000000000000000000",
+          "effect": "PENDING_APPROVAL",
+          "matchedRules": [
+            "allow-transfer-to-allowlisted",
+            "approve-large-spend"
+          ],
+          "reason": "allow-transfer-to-allowlisted, approve-large-spend",
+          "approvalId": "appr_01M6JVBPCQKPQA8GRVWTM5JN68"
+        }
+      },
+      "hash": "aabf438c005932971f8ee8bbee64a569e4e21aea4b203b7cbd993eb417d13e8c"
+    },
+    {
+      "ledgerFormatVersion": 1,
+      "canonicalizationVersion": 1,
+      "hashAlgorithm": "sha256",
+      "previousHash": "aabf438c005932971f8ee8bbee64a569e4e21aea4b203b7cbd993eb417d13e8c",
+      "event": {
+        "eventId": "evt_01M6JVBPCVMX6MJ3925NTEF624",
+        "eventType": "near.approval",
+        "occurredAt": "2026-11-04T08:38:40.795Z",
+        "actor": "demo-agent",
+        "resourceId": "appr_01M6JVBPCQKPQA8GRVWTM5JN68",
+        "payload": {
+          "approvalId": "appr_01M6JVBPCQKPQA8GRVWTM5JN68",
+          "decision": "APPROVED",
+          "approverId": "human"
+        }
+      },
+      "hash": "9f5f7b2b4f977449a95a5d538a4ff1dc9d78b0757981076e25a7abdfb171fd90"
+    },
+    {
+      "ledgerFormatVersion": 1,
+      "canonicalizationVersion": 1,
+      "hashAlgorithm": "sha256",
+      "previousHash": "9f5f7b2b4f977449a95a5d538a4ff1dc9d78b0757981076e25a7abdfb171fd90",
+      "event": {
+        "eventId": "evt_01M6JVBPCYCBPZ7BABXJTYD2AS",
+        "eventType": "near.decision",
+        "occurredAt": "2026-11-04T08:38:40.798Z",
+        "actor": "demo-agent",
+        "payload": {
+          "tool": "near_transfer",
+          "params": {
+            "receiver_id": "warden-anchor-lkazab.testnet",
+            "amount_near": "0.8"
+          },
+          "amountYocto": "800000000000000000000000",
+          "effect": "ALLOW",
+          "matchedRules": [
+            "allow-transfer-to-allowlisted",
+            "approve-large-spend",
+            "approval:appr_01M6JVBPCQKPQA8GRVWTM5JN68"
+          ],
+          "reason": "allow-transfer-to-allowlisted, approve-large-spend",
+          "approvalId": "appr_01M6JVBPCQKPQA8GRVWTM5JN68"
+        }
+      },
+      "hash": "3612c3dd7ba7980daab1276ec8504112ecefd3368cc08398cab5a6b452bd513c"
+    },
+    {
+      "ledgerFormatVersion": 1,
+      "canonicalizationVersion": 1,
+      "hashAlgorithm": "sha256",
+      "previousHash": "3612c3dd7ba7980daab1276ec8504112ecefd3368cc08398cab5a6b452bd513c",
+      "event": {
+        "eventId": "evt_01M6JVBRMWDHYTW4CHRKY420BA",
+        "eventType": "near.execution",
+        "occurredAt": "2026-11-04T08:38:43.101Z",
+        "actor": "demo-agent",
+        "payload": {
+          "tool": "near_transfer",
+          "txHash": "Gg8poENfNbcmRNaRr6iMkNP7bQdAFUzQHZNBVsbbTss",
+          "receiver": "warden-anchor-lkazab.testnet",
+          "amount_near": "0.8"
+        }
+      },
+      "hash": "e2b55074104e97470beac5b39c0eaef60703ad70e812bc3415df7faa31f108bf"
+    },
+    {
+      "ledgerFormatVersion": 1,
+      "canonicalizationVersion": 1,
+      "hashAlgorithm": "sha256",
+      "previousHash": "e2b55074104e97470beac5b39c0eaef60703ad70e812bc3415df7faa31f108bf",
+      "event": {
+        "eventId": "evt_01M6JVBRN00MZ4WSA77MXMAN28",
+        "eventType": "near.decision",
+        "occurredAt": "2026-11-04T08:38:43.104Z",
+        "actor": "demo-agent",
+        "payload": {
+          "tool": "near_transfer",
+          "params": {
+            "receiver_id": "warden-anchor-lkazab.testnet",
+            "amount_near": "0.5"
+          },
+          "amountYocto": "500000000000000000000000",
+          "effect": "ALLOW",
+          "matchedRules": [
+            "allow-transfer-to-allowlisted"
+          ],
+          "reason": "allow-transfer-to-allowlisted"
+        }
+      },
+      "hash": "4909d77ec5cac3a6bafa28de56a8fb00d20bcf87b240f33605ab9cd6a470ba27"
+    },
+    {
+      "ledgerFormatVersion": 1,
+      "canonicalizationVersion": 1,
+      "hashAlgorithm": "sha256",
+      "previousHash": "4909d77ec5cac3a6bafa28de56a8fb00d20bcf87b240f33605ab9cd6a470ba27",
+      "event": {
+        "eventId": "evt_01M6JVBTGGGYSAZSN3C3CHGY02",
+        "eventType": "near.execution",
+        "occurredAt": "2026-11-04T08:38:45.008Z",
+        "actor": "demo-agent",
+        "payload": {
+          "tool": "near_transfer",
+          "txHash": "CCNPiYAiM4x2QYHwkcUudGJdjmH8McFJfE3G4ab9szqB",
+          "receiver": "warden-anchor-lkazab.testnet",
+          "amount_near": "0.5"
+        }
+      },
+      "hash": "8603942c559639ffaaad0170d7cd7486412f75c2b709d29c542cc4b4241dadf5"
+    },
+    {
+      "ledgerFormatVersion": 1,
+      "canonicalizationVersion": 1,
+      "hashAlgorithm": "sha256",
+      "previousHash": "8603942c559639ffaaad0170d7cd7486412f75c2b709d29c542cc4b4241dadf5",
+      "event": {
+        "eventId": "evt_01M6JVBTGJXVH0TC4DR0T7HY62",
+        "eventType": "near.decision",
+        "occurredAt": "2026-11-04T08:38:45.010Z",
+        "actor": "demo-agent",
+        "payload": {
+          "tool": "near_transfer",
+          "params": {
+            "receiver_id": "warden-anchor-lkazab.testnet",
+            "amount_near": "0.5"
+          },
+          "amountYocto": "500000000000000000000000",
+          "effect": "ALLOW",
+          "matchedRules": [
+            "allow-transfer-to-allowlisted"
+          ],
+          "reason": "allow-transfer-to-allowlisted"
+        }
+      },
+      "hash": "4a2cf6718f5c5534887d912cfb3ea0a298bce05b82b05ef77aaf6b82a8082a82"
+    },
+    {
+      "ledgerFormatVersion": 1,
+      "canonicalizationVersion": 1,
+      "hashAlgorithm": "sha256",
+      "previousHash": "4a2cf6718f5c5534887d912cfb3ea0a298bce05b82b05ef77aaf6b82a8082a82",
+      "event": {
+        "eventId": "evt_01M6JVBWV6Q732AAXY2K8DFZ10",
+        "eventType": "near.execution",
+        "occurredAt": "2026-11-04T08:38:47.398Z",
+        "actor": "demo-agent",
+        "payload": {
+          "tool": "near_transfer",
+          "txHash": "98vHiVqiYUdZEMpadqRxBjWSUxUyLdfySCB7gkaowEzQ",
+          "receiver": "warden-anchor-lkazab.testnet",
+          "amount_near": "0.5"
+        }
+      },
+      "hash": "4be9120aa7ea9e467b313a4e2c3d9b4d5f77b58e38a09022ecda5860858bf778"
+    },
+    {
+      "ledgerFormatVersion": 1,
+      "canonicalizationVersion": 1,
+      "hashAlgorithm": "sha256",
+      "previousHash": "4be9120aa7ea9e467b313a4e2c3d9b4d5f77b58e38a09022ecda5860858bf778",
+      "event": {
+        "eventId": "evt_01M6JVBWV9QN3CPE0FZN16ANKS",
+        "eventType": "near.decision",
+        "occurredAt": "2026-11-04T08:38:47.401Z",
+        "actor": "demo-agent",
+        "payload": {
+          "tool": "near_transfer",
+          "params": {
+            "receiver_id": "warden-anchor-lkazab.testnet",
+            "amount_near": "0.5"
+          },
+          "amountYocto": "500000000000000000000000",
+          "effect": "DENY",
+          "matchedRules": [
+            "allow-transfer-to-allowlisted",
+            "deny-over-daily-cap"
+          ],
+          "reason": "allow-transfer-to-allowlisted, deny-over-daily-cap"
+        }
+      },
+      "hash": "726a9a76ecc5ea56899250d4f5292b967d26bf9aaec2c141c3058e991cca0a80"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "appr_01M6JVBPCQKPQA8GRVWTM5JN68": {
+    "requestId": "appr_01M6JVBPCQKPQA8GRVWTM5JN68",
+    "requesterId": "demo-agent",
+    "action": "near_transfer",
+    "resource": {
+      "receiver_id": "warden-anchor-lkazab.testnet",
+      "amount_near": "0.8",
+      "digest": "d0bc4fed12782729ac5bd29f2d68254de39eeb152fd7b4cb8286bac6b480242b"
+    },
+    "requestedAt": "2026-11-04T08:38:40.792Z",
+    "expiresAt": "2026-11-04T08:48:40.792Z",
+    "status": "APPROVED",
+    "approverId": "human",
+    "resolvedAt": "2026-11-04T08:38:40.794Z",
+    "used": true
+  }
+}
