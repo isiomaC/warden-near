@@ -1,0 +1,9 @@
+{
+  "name": "warden-near-default",
+  "version": 1,
+  "perCallNear": "1",
+  "dailyNear": "2",
+  "approvalAboveNear": "0.5",
+  "allowedContracts": ["warden-anchor-lkazab.testnet", "guestbook.near-examples.testnet"],
+  "allowedRecipients": ["warden-anchor-lkazab.testnet"]
+}
