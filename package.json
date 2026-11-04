@@ -26,9 +26,6 @@
   },
   "pnpm": {
     "onlyBuiltDependencies": [
-      "near-sdk-js",
-      "near-sandbox",
-      "near-workspaces",
       "esbuild"
     ]
   },
